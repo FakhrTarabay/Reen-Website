@@ -1,23 +1,32 @@
 window.onscroll = function() {myFunction()};
-    
-var header = document.getElementById("mainhead");
-var l = document.getElementById("logo");
-var ll = document.getElementById("u2");
-var lll = document.getElementById("searchico");
-var sticky = l.offsetTop;
-    
+
+var header = document.getElementById("navbar2");
+var sticky = header.offsetTop;
+var logo = document.getElementById("logo");
+
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    l.src="img/logosmall.png";
-    l.style.marginTop="14px";
-    ll.style.marginTop="0px";
-    lll.style.marginTop="20px";
+    logo.src = "img/logosmall.png";
+    logo.style.marginTop="14px";
+    logo.style.marginLeft="0px";
+
   } else {
-    ll.style.marginTop="73px";
-    l.style.marginTop="77px";
-    l.src="img/logo.png";
-    lll.style.marginTop="93px"
     header.classList.remove("sticky");
+    logo.style.marginTop="0px";
+    logo.style.marginLeft="0px ";
+    logo.src = "img/logo.png";
   }
+} 
+var hover = document.getElementById("input");
+
+hover.addEventListener('mouseover', changeDefOver);
+hover.addEventListener('mouseout', changeDefOut);
+
+function changeDefOver() {
+  hover.placeholder = "ex:info@fuviz.com";
+}
+
+function changeDefOut() {
+  hover.placeholder = "Enter your email address";
 }
