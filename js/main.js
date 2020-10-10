@@ -30,3 +30,21 @@ function changeDefOver() {
 function changeDefOut() {
   hover.placeholder = "Enter your email address";
 }
+
+var urls = ["img/bg2.png","img/bg3.png", "img/bg.png", "img/bg4.png","img/bg6.png"];
+var index = 2;
+
+function carouselRight(){
+  var carousel = document.getElementById("carousel");
+  if(index!=urls.length-1){
+    carousel.style.backgroundImage = "url(" + urls[index+1] + ")";
+    index=index+1;
+  }
+ }
+function carouselLeft(){
+  var carousel = document.getElementById("carousel");
+  if(index!=0){
+    carousel.style.backgroundImage = "url(" + urls[index-1] + ")";
+    index=index-1;
+  }
+}
