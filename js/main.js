@@ -32,19 +32,23 @@ function changeDefOut() {
 }
 
 var urls = ["img/bg2.png","img/bg3.png", "img/bg.png", "img/bg4.png","img/bg6.png"];
+var ids = ["in2","in3","in1","in4","in5"];
 var index = 2;
-
 function carouselRight(){
   var carousel = document.getElementById("carousel");
   if(index!=urls.length-1){
+    document.getElementById(""+ids[index]).style.display = "none";
     carousel.style.backgroundImage = "url(" + urls[index+1] + ")";
     index=index+1;
+    document.getElementById(""+ids[index]).style.display = "block";
   }
  }
 function carouselLeft(){
   var carousel = document.getElementById("carousel");
   if(index!=0){
+    document.getElementById(""+ids[index]).style.display = "none";
     carousel.style.backgroundImage = "url(" + urls[index-1] + ")";
     index=index-1;
+    document.getElementById(""+ids[index]).style.display = "block";
   }
 }

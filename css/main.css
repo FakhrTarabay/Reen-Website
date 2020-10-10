@@ -559,7 +559,8 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   background-color:#4e5c6c;
   border: none;height: 30px;
-  color: #9eacba;border-radius: 3px;
+  color: #9eacba;
+  border-radius: 3px;
   width: 100%;
   height: 40px;
   padding-left: 10px;
@@ -579,38 +580,39 @@ h3 {
   border-radius: 4px;
   padding: 6px 6px 6px 6px;
 }
-#firsts {
-  position: absolute;
-  margin: 0px;
-  padding-left: 27.2%;
-  padding-top: 250px;
-  top: 0;
-}
-.in1,.in2,.in3,.in4,.in5{
+#in1,#in2,#in3,#in4,#in5{
   position: absolute;
   margin: 0px;
   padding: 150px 27.2% 150px 27.2%;
   display: none;
 }
-.in1 p ,.in2 p,.in3 p{
+#in1 p ,#in2 p,#in3 p,#in4 p,#in5 p{
   font-weight: bold;
   color: white;
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.in1 p {
+#in1 p {
   text-align: center;
 }
-.in2 p {
+#in2 p {
   text-align: right;
 }
-.in3 p {
+#in3 p {
   text-align: left;
-  background-color: red;
+  background-color: #506a85;
+}
+#in4 p {
+  text-align: right;
+  margin-left: 42px;
+  background-color: #506a85;
+}
+#in5 p {
+  text-align: center;
 }
 
-.in1 p.smaller1 {
+#in1 p.smaller1 {
 
   color: #a3b1bf;
   font-size: 15px;
@@ -621,7 +623,7 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.in2 p.smaller2 {
+#in2 p.smaller2 {
 
   color: #a3b1bf;
   font-size: 15px;
@@ -632,11 +634,32 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.in3 p.smaller3 {
+#in3 p.smaller3 {
+
+  color: #a3b1bf;
+  background-color:transparent;
+  font-size: 15px;
+  text-align:left;
+  margin: 0px;
+  margin-top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#in4 p.smaller4 {
+  color: #506a85;
+  background-color:transparent;
+  font-size: 15px;
+  text-align: right;
+  margin: 0px;
+  margin-top: -50px;
+  padding-left: 119px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#in5 p.smaller5 {
 
   color: #a3b1bf;
   font-size: 15px;
-  text-align:left;
+  text-align: center;
   margin: 0px;
   margin-top: -50px;
   padding-left: 20px;
