@@ -318,6 +318,7 @@ li {
 .dropdown {
   float: left;
   overflow: hidden;
+  padding: 14px 16px;
 }
 
 /* Dropdown button */
@@ -339,6 +340,7 @@ li {
 
 .dropdown-content {
   margin-left: 19.5%;
+  margin-top: 35px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -444,10 +446,74 @@ h3 {
   background:none;
   transition:.5s ease;
 }
+.hover2 {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+.hover2:hover:before {
+  background:#20ad95;
+  margin-bottom: 57px;
+  opacity: 60%;
+}
+.hover2:hover .text{
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+}
+.hover2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:none;
+  transition:.5s ease;
+}
 .text {
   display: none;
   color: white;
   font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover3 {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+.hover3:hover:before {
+  background:#20ad95;
+  opacity: 60%;
+}
+.hover3:hover .text1{
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+}
+.hover3:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:none;
+  transition:.5s ease;
+}
+
+.text1 {
+  display: none;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -479,7 +545,7 @@ h3 {
 #cbutton1,#cbutton2 {
   margin-top: 425px;
   position: absolute;
-  opacity: 50%;
+  opacity: 10%;
 }
 #cbutton1:hover,#cbutton2:hover {
   opacity: 100%;
@@ -537,16 +603,19 @@ h3 {
   margin-top: 30px;
   margin-left: 96.82%;
   border-radius: 3px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color:#3c5065;
   position: absolute;
-}
-.button3 a {
   color: #949ba2;
   text-decoration: none;
+  text-align: center;
 }
+
 .button3:hover{
   background-color: #506a85;
+  color: #00b596;
  }
 .button3:hover a{
  background-color: #506a85;
@@ -583,7 +652,7 @@ h3 {
 #in1,#in2,#in3,#in4,#in5{
   position: absolute;
   margin: 0px;
-  padding: 150px 27.2% 150px 27.2%;
+  padding: 150px 26.2% 150px 26.2%;
   display: none;
 }
 #in1 p ,#in2 p,#in3 p,#in4 p,#in5 p{
@@ -592,10 +661,18 @@ h3 {
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-#in1 p {
-  text-align: center;
+#in6,#in7 {
+  position: absolute;
+  margin: 0px;
+  padding: 150px 24.5% 150px 24.5%;
 }
+#in6 p,#in7 p {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color:#506a85;
+}
+
 #in2 p {
   text-align: right;
 }
@@ -664,4 +741,61 @@ h3 {
   margin-top: -50px;
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+#in6 p.smaller6 {
+
+  color: #a3b1bf;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px;
+  margin-top: -50px;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#in7 p.smaller7 {
+
+  color: #a3b1bf;
+  font-size: 15px;
+  text-align: center;
+  margin: 0px;
+  margin-top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pagination {
+  padding-left: 43.5%;
+  padding-top: 550px;
+  display: none;
+}
+#main2 .part1 {
+  color: #506a85;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px;
+  margin-top: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 29%;
+}
+#main2 .part2 {
+  color: #a3b1bf;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+  margin-top:30px;
+  padding-left: 25%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column2 {
+  position: absolute;
+  float: left;
+  width: 20%;
+  height: 300px;
+  margin-top: 400px;
+}
+.par1 {
+  position: absolute;margin: 0px;margin-top: 13px;margin-left:25%;font-size: 20px;font-weight: 900;
+}
+.par2 {
+  position: absolute;margin: 0px;margin-top: 50px;margin-left:25%;font-size: 15px;
 }
