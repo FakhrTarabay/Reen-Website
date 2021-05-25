@@ -2,7 +2,6 @@ window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("navbar2");
 var sticky = header.offsetTop;
-var logo = document.getElementById("logo");
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
@@ -62,8 +61,8 @@ function carouselRight(){
     document.getElementById(""+dots[index]).style.display = "none";
     carousel.style.backgroundImage = "url(" + urls[index+1] + ")";
     index=index+1;
-    document.getElementById(""+dots[index]).style.display = "block";
-    document.getElementById(""+ids[index]).style.display = "block";
+    document.getElementById(""+dots[index]).style.display = "flex";
+    document.getElementById(""+ids[index]).style.display = "flex";
   }
  }
 function carouselLeft(){
@@ -73,8 +72,8 @@ function carouselLeft(){
     document.getElementById(""+dots[index]).style.display = "none";
     carousel.style.backgroundImage = "url(" + urls[index-1] + ")";
     index=index-1;
-    document.getElementById(""+dots[index]).style.display = "block";
-    document.getElementById(""+ids[index]).style.display = "block";
+    document.getElementById(""+dots[index]).style.display = "flex";
+    document.getElementById(""+ids[index]).style.display = "flex";
   }
 }
 
@@ -100,3 +99,21 @@ function changenormal2() {
   fig3.style.color = "#506a85";
 }
 
+var fig4 = document.getElementById("megamenu");
+var fig5 = document.getElementById("megamenu2");
+fig4.addEventListener('mouseover', appear);
+fig4.addEventListener('mouseout', disappear);
+function appear() {
+  fig5.style.display = "block";
+}
+function disappear() {
+  fig5.style.display = "none";
+}
+
+function closeSide(){
+  document.getElementById("sideBar").style.width = "0px";
+}
+
+function openSide(){
+  document.getElementById("sideBar").style.width = "75%";
+}
